@@ -100,7 +100,7 @@ header {
     justify-content: center;
     position: relative;
     bottom: 25px;
-    right: 80px;
+    right: 70px;
     
 }
 
@@ -160,152 +160,81 @@ header {
         height: 31px;
     }
     
+}
     .BTNS {
-        padding-top: 10px;
+        margin-top: -20px;
+        padding-right: 20px;
     }
 
-    .restau {
+.step {
         display: flex;
-        justify-content: center;
-        align-content: center;
-    
-        .btnR {
+        align-items: center;
+        margin: 30px 0;
+        border-radius: 15px;
+        background-color: #f5f5f5;
+        width: auto;
+        height: 72px;
+        box-shadow: 2px 2px 10px gray;    
+    }
+
+        .btn1 {
             display: flex;
-            border: 0px solid transparent;
-            background: #F6F6F6;
-            width: 322px;
-            height: 72px;
-            border-radius: 25px;
-            box-shadow: 1px 4px 10px gray;
-            align-items: center;
+            position: absolute;
+            left: 10px;
+        
+            .fi-sr-circle-1 {
+                color: #9356DC;
+            }
         }
-    
-        .textR {
+            
+        .btn2 {
             display: flex;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 18px;
-            padding-left: 70px;
-            padding-top: 5px;
-    }
-    }
-    
-    .menu {
-        display: flex;
-        justify-content: center;
-        padding-top: 30px;
-        align-content: center;
-    
-            .btnM {
-                display: flex;
-                border: 0px solid transparent;
-                background: #F6F6F6;
-                width: 322px;
-                height: 72px;
-                border-radius: 25px;
-                box-shadow: 1px 4px 10px gray;
-                align-items: center;
+            position: absolute;
+            left: 10px;
+        
+            .fi-sr-circle-2 {
+                color: #9356DC;
             }
-    
-            .textM {
-                display: flex;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 18px;
-                padding-left: 70px;
-                padding-top: 5px;
+        }
+            
+        .btn3 {
+            display: flex;
+            position: absolute;
+            left: 10px;
+        
+            .fi-sr-circle-3 {
+                color: #9356DC;
             }
         }
     
-    .deg {
+.icon-container {
         display: flex;
+        position: relative;
+        right: 20px;
+        top: 15px;
+      }
+      
+.fa-mobile-screen-button, .fa-bar , .fa-store {
+        font-size: 20px;
+      }
+      
+.text-container {
+        display: flex;
+        width: 50vw;
+        flex-grow: 1;
         justify-content: center;
-        padding-top: 40px;
-        align-content: center;
-    
-            .btnD {
-                display: flex;
-                border: 0px solid transparent;
-                background: #F6F6F6;
-                width: 322px;
-                height: 72px;
-                border-radius: 25px;
-                box-shadow: 1px 4px 10px gray;
-                align-items: center;
-            }
-    
-            .textD {
-                display: flex;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 18px;
-                padding-left: 70px;
-                padding-top: 5px;
-            }
-        }
-}
+      }
 
-.btn1 {
-    position: relative;
-    left: 20px;
-    margin-top: 25px;
-    display: flex;
-
-    .fi-sr-circle-1 {
+.fa-store {
         color: #9356DC;
-        width: 24px;
-        height: 24px;
     }
 
-}
-
-.btn2 {
+.fa-bars {
     position: relative;
-    left: 20px;
-    margin-top: 25px;
-    display: flex;
-
-    .fi-sr-circle-2 {
-        color: #9356DC;
-        width: 24px;
-        height: 24px;
-   }
-
+    top: 3px;
 }
 
-.btn3 {
+.fa-mobile-screen-button {
     position: relative;
-    left: 20px;
-    margin-top: 25px;
-    display: flex;
-
-    .fi-sr-circle-3 {
-        color: #9356DC;
-        width: 24px;
-        height: 24px;
+    left: 7px;
 }
-}
-
-.tel {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    margin-top: 25px;
-    right: 310px;
-}
-
-.me {
-    position: relative;
-    width: 24px;
-    height: 24px;
-    margin-top: 25px;
-    right: 310px;
-}
-
-.fi-sr-circle-3 {
-    color: #9356DC;
-    width: 24px;
-    height: 24px;
-}
-
-
