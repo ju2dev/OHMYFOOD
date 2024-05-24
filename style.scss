@@ -158,6 +158,7 @@ header {
     .title2 {
         width: 275px;
         height: 31px;
+        margin-top: 40px;
     }
     
 }
@@ -237,4 +238,17 @@ header {
 .fa-mobile-screen-button {
     position: relative;
     left: 7px;
+}
+
+.section3 {
+    display: flex;
+    margin-top: 30px;
+    height: 440px;
+    padding-left: 20px;
+    flex-direction: column;
+
+    .title3 {
+        width: 150px;
+        height: 31px;
+    }
 }
