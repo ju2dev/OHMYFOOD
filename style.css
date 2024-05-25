@@ -109,7 +109,7 @@ header .logo img {
   border-radius: 25px;
   padding-top: 20px;
 }
-.button .buttonEco {
+.button .buttonexplore {
   border: 0px solid transparent;
   background: rgb(147, 86, 220);
   background: linear-gradient(0deg, rgba(147, 86, 220, 0.8505777311) 46%, rgb(255, 121, 218) 100%);
@@ -118,7 +118,7 @@ header .logo img {
   border-radius: 25px;
   box-shadow: 1px 4px 10px gray;
 }
-.button .Text-eco {
+.button .Text-ex {
   display: flex;
   font-size: 16px;
   font-weight: 500;
@@ -225,4 +225,69 @@ header .logo img {
 .section3 .title3 {
   width: 150px;
   height: 31px;
+}
+
+.card1 {
+  display: flex;
+  position: relative;
+  top: 20px;
+  background-color: white;
+  height: 251px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin-right: 20px;
+}
+
+.restau-title {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  font-size: 18px;
+  left: 15px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.restau-cards img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.restau-cards .card-title1 {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.restau-cards .card-subtitle1 {
+  position: absolute;
+  bottom: 5px;
+  font-size: 17px;
+  left: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.restau-cards .card-love1 {
+  margin-bottom: 40px;
+  position: absolute;
+  bottom: 6px;
+  right: 25px;
+}
+
+.section-title1 {
+  display: flex;
+  position: relative;
+  margin: 0;
+  font-size: 22px;
+}
+
+.grid {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

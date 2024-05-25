@@ -11,7 +11,6 @@ $background-color_2: #F6F6F6;
 	--main-bg-color: #FFFFFF;
 	--filter-bg-color: #DEEBFF;
 	--main-color: #000000;
-	// ajoutez la couleur principale ici --font-family: 'Roboto', sans-serif;
 	--max-width: 1440px;
 }
 
@@ -82,18 +81,18 @@ header {
 	display: none;
 }
 
-    #site-search {
-        display: flex;
-        height: 49px;
-        width: 100vw;
-        border: 1px solid transparent;
-        font-size: 16px;
-        color: #353535;
-        background: #EAEAEA;
-        box-shadow: 1px 0px 4px grey;
-        font-weight: 500;
-        text-align: center;
-    }
+#site-search {
+    display: flex;
+    height: 49px;
+    width: 100vw;
+    border: 1px solid transparent;
+    font-size: 16px;
+    color: #353535;
+    background: #EAEAEA;
+    box-shadow: 1px 0px 4px grey;
+    font-weight: 500;
+    text-align: center;
+}
 
 .Icone {
     display: flex;
@@ -127,7 +126,7 @@ header {
     border-radius: 25px;
     padding-top: 20px;
 
-    .buttonEco {    
+    .buttonexplore {    
         border: 0px solid transparent;
         background: rgb(147,86,220);
         background: linear-gradient(0deg, rgba(147,86,220,0.850577731092437) 46%, rgba(255,121,218,1) 100%);
@@ -137,7 +136,7 @@ header {
         box-shadow: 1px 4px 10px gray;
         }
     
-        .Text-eco {
+        .Text-ex {
             display: flex;
             font-size: 16px;
             font-weight: 500;
@@ -162,7 +161,8 @@ header {
     }
     
 }
-    .BTNS {
+
+.BTNS {
         margin-top: -20px;
         padding-right: 20px;
     }
@@ -251,4 +251,68 @@ header {
         width: 150px;
         height: 31px;
     }
+}
+
+.card1 {
+    display: flex;
+    position: relative;
+    top: 20px;
+    background-color: white;
+    height: 251px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-right: 20px;
+}
+
+.restau-title {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    font-size: 18px;
+    left: 15px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.restau-cards img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.restau-cards .card-title1 {
+margin-top: 10px;
+margin-bottom: 4px;
+}
+
+.restau-cards .card-subtitle1 {
+    position: absolute;
+    bottom: 5px;
+    font-size: 17px;
+    left: 15px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.restau-cards .card-love1 {
+    margin-bottom: 40px;
+    position: absolute;
+    bottom: 6px;
+    right: 25px;
+}
+
+.section-title1 {
+display: flex;
+position: relative;
+margin: 0;
+font-size: 22px;
+}
+
+.grid {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
