@@ -231,10 +231,6 @@ header {
     padding-left: 20px;
     flex-direction: column;
 
-    .title3 {
-        width: 150px;
-        height: 31px;
-    }
 
     .card1 {
         display: flex;
@@ -293,9 +289,16 @@ header {
         flex-direction: column;
     }
 }
+.title3 {
+    width: 150px;
+    height: 31px;
+    padding-left: 20px;
+}
 
 footer {
     background-color: #353535;
+    position: relative;
+    top: 720px;
 
     .logoF {
         display: flex;

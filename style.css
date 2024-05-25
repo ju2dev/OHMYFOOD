@@ -197,10 +197,6 @@ header .logo img {
   padding-left: 20px;
   flex-direction: column;
 }
-.section3 .title3 {
-  width: 150px;
-  height: 31px;
-}
 .section3 .card1 {
   display: flex;
   position: relative;
@@ -253,8 +249,16 @@ header .logo img {
   flex-direction: column;
 }
 
+.title3 {
+  width: 150px;
+  height: 31px;
+  padding-left: 20px;
+}
+
 footer {
   background-color: #353535;
+  position: relative;
+  top: 720px;
 }
 footer .logoF {
   display: flex;
