@@ -2,17 +2,19 @@
   --main-bg-color: #FFFFFF;
   --filter-bg-color: #DEEBFF;
   --main-color: #000000;
-  --max-width: 1440px;
 }
 
 * {
   font-family: "Roboto", sans-serif;
 }
 
+.main {
+  display: flex;
+  flex-grow: 1;
+}
+
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
 }
 
 .fa-solid {
@@ -21,10 +23,7 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: var(--max-width);
-  padding: 0 var(--padding-horizontal);
-  box-sizing: border-box;
-  height: 1500px;
+  height: 2160px;
   background-color: #F6F6F6;
 }
 
@@ -55,18 +54,6 @@ header .logo img {
   width: 197px;
 }
 
-.Rechercher {
-  display: flex;
-  position: relative;
-  bottom: 3px;
-  left: 20px;
-  font-size: 18px;
-}
-
-.iconerecherche {
-  display: none;
-}
-
 #site-search {
   display: flex;
   height: 49px;
@@ -88,7 +75,6 @@ header .logo img {
   right: 70px;
 }
 
-/****** HEAD ***********/
 .title {
   font-weight: 700;
   font-size: 24px;
@@ -139,13 +125,11 @@ header .logo img {
   height: 31px;
   margin-top: 40px;
 }
-
-.BTNS {
+.section2 .BTNS {
   margin-top: -20px;
   padding-right: 20px;
 }
-
-.step {
+.section2 .step {
   display: flex;
   align-items: center;
   margin: 30px 0;
@@ -155,62 +139,53 @@ header .logo img {
   height: 72px;
   box-shadow: 2px 2px 10px gray;
 }
-
-.btn1 {
+.section2 .btn1 {
   display: flex;
   position: absolute;
   left: 10px;
 }
-.btn1 .fi-sr-circle-1 {
+.section2 .btn1 .fi-sr-circle-1 {
   color: #9356DC;
 }
-
-.btn2 {
+.section2 .btn2 {
   display: flex;
   position: absolute;
   left: 10px;
 }
-.btn2 .fi-sr-circle-2 {
+.section2 .btn2 .fi-sr-circle-2 {
   color: #9356DC;
 }
-
-.btn3 {
+.section2 .btn3 {
   display: flex;
   position: absolute;
   left: 10px;
 }
-.btn3 .fi-sr-circle-3 {
+.section2 .btn3 .fi-sr-circle-3 {
   color: #9356DC;
 }
-
-.icon-container {
+.section2 .icon-container {
   display: flex;
   position: relative;
   right: 20px;
   top: 15px;
 }
-
-.fa-mobile-screen-button, .fa-bar, .fa-store {
+.section2 .fa-mobile-screen-button, .section2 .fa-bar, .section2 .fa-store {
   font-size: 20px;
 }
-
-.text-container {
+.section2 .text-container {
   display: flex;
   width: 50vw;
   flex-grow: 1;
   justify-content: center;
 }
-
-.fa-store {
+.section2 .fa-store {
   color: #9356DC;
 }
-
-.fa-bars {
+.section2 .fa-bars {
   position: relative;
   top: 3px;
 }
-
-.fa-mobile-screen-button {
+.section2 .fa-mobile-screen-button {
   position: relative;
   left: 7px;
 }
@@ -226,8 +201,7 @@ header .logo img {
   width: 150px;
   height: 31px;
 }
-
-.card1 {
+.section3 .card1 {
   display: flex;
   position: relative;
   top: 20px;
@@ -237,8 +211,7 @@ header .logo img {
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin-right: 20px;
 }
-
-.restau-title {
+.section3 .restau-title {
   display: flex;
   position: absolute;
   bottom: 30px;
@@ -247,8 +220,7 @@ header .logo img {
   font-weight: 700;
   line-height: 21px;
 }
-
-.restau-cards img {
+.section3 .restau-cards img {
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
@@ -257,13 +229,11 @@ header .logo img {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-.restau-cards .card-title1 {
+.section3 .restau-cards .card-title1 {
   margin-top: 10px;
   margin-bottom: 4px;
 }
-
-.restau-cards .card-subtitle1 {
+.section3 .restau-cards .card-subtitle1 {
   position: absolute;
   bottom: 5px;
   font-size: 17px;
@@ -271,23 +241,45 @@ header .logo img {
   font-weight: 300;
   line-height: 20px;
 }
-
-.restau-cards .card-love1 {
+.section3 .restau-cards .card-love1 {
   margin-bottom: 40px;
   position: absolute;
   bottom: 6px;
   right: 25px;
 }
-
-.section-title1 {
-  display: flex;
-  position: relative;
-  margin: 0;
-  font-size: 22px;
-}
-
-.grid {
+.section3 .restaurants {
   display: flex;
   gap: 30px;
   flex-direction: column;
+}
+
+footer {
+  background-color: #353535;
+}
+footer .logoF {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+}
+footer .logoF img {
+  height: 27px;
+  width: 100px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+footer .liste1 {
+  display: flex;
+  color: #EAEAEA;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+footer .fa-utensils {
+  color: #DEEBFF;
+  padding-right: 5px;
+}
+footer .fa-handshake-angle {
+  color: #DEEBFF;
+  padding-right: 5px;
 }/*# sourceMappingURL=style.css.map */
