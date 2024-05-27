@@ -1,0 +1,164 @@
+:root {
+  --main-bg-color: #FFFFFF;
+  --filter-bg-color: #DEEBFF;
+  --main-color: #000000;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+}
+
+body {
+  margin: 0;
+}
+
+.main-container {
+  width: 100%;
+  height: 2160px;
+  background-color: #F6F6F6;
+  position: relative;
+  bottom: 60px;
+  border-radius: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  height: 44px;
+  background-color: #FFFFFF;
+}
+header .logo {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+}
+header .logo img {
+  height: 36px;
+  width: 197px;
+}
+
+.background {
+  display: flex;
+}
+.background img {
+  width: 100vw;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.title {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+}
+
+.card-love1 {
+  display: flex;
+  position: relative;
+  justify-content: end;
+  bottom: 40px;
+  width: auto;
+  height: 10px;
+  right: 30px;
+}
+
+.entre {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  position: relative;
+  left: 13px;
+  bottom: 20px;
+}
+
+.section2 {
+  display: flex;
+  height: 440px;
+  padding-left: 10px;
+  flex-direction: column;
+}
+.section2 .BTNS {
+  display: flex;
+  position: relative;
+  bottom: 40px;
+}
+.section2 .step {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+  border-radius: 15px;
+  width: 339px;
+  height: 69px;
+  box-shadow: 10px 10px 20px 15px #EAEAEA;
+}
+
+.es {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  width: 300px;
+  padding-left: 20px;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.p {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 17px;
+  width: auto;
+  margin: 0px;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #353535;
+  position: relative;
+  top: 720px;
+}
+footer .logoF {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+}
+footer .logoF img {
+  height: 27px;
+  width: 100px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+footer .liste1 {
+  display: flex;
+  color: #EAEAEA;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+footer .fa-utensils {
+  color: #DEEBFF;
+  padding-right: 5px;
+}
+footer .fa-handshake-angle {
+  color: #DEEBFF;
+  padding-right: 5px;
+}/*# sourceMappingURL=style.css.map */

@@ -11,7 +11,12 @@ $background-color_2: #F6F6F6;
 	--main-bg-color: #FFFFFF;
 	--filter-bg-color: #DEEBFF;
 	--main-color: #000000;
-	
+
+    .shrikhand-regular {
+        font-family: "Shrikhand", serif;
+        font-weight: 400;
+        font-style: normal;
+      }
 }
 
 $font-family_1: 'Roboto', sans-serif;
@@ -87,7 +92,7 @@ header {
     justify-content: center;
     position: relative;
     bottom: 25px;
-    right: 70px; 
+    right: 80px; 
 }
 
     .title {
@@ -162,10 +167,6 @@ header {
     }
 
         .btn1 {
-            display: flex;
-            position: absolute;
-            left: 10px;
-        
             .fi-sr-circle-1 {
                 color: #9356DC;
             }
@@ -173,8 +174,6 @@ header {
             
         .btn2 {
             display: flex;
-            position: absolute;
-            left: 10px;
         
             .fi-sr-circle-2 {
                 color: #9356DC;
@@ -183,9 +182,7 @@ header {
             
         .btn3 {
             display: flex;
-            position: absolute;
-            left: 10px;
-        
+                    
             .fi-sr-circle-3 {
                 color: #9356DC;
             }
@@ -234,8 +231,6 @@ header {
 
     .card1 {
         display: flex;
-        position: relative;
-        top: 20px;
         background-color: white;
         height: 251px;
         border-radius: 20px;
@@ -293,6 +288,7 @@ header {
     width: 150px;
     height: 31px;
     padding-left: 20px;
+    padding-top: 20px;
 }
 
 footer {
