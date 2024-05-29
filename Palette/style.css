@@ -1,9 +1,3 @@
-:root {
-  --main-bg-color: #FFFFFF;
-  --filter-bg-color: #DEEBFF;
-  --main-color: #000000;
-}
-
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -105,12 +99,13 @@ nav .fa-arrow-left {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  padding-right: 20px;
 }
 .section2 .step {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  width: 315px;
+  width: auto;
   height: 69px;
   box-shadow: 10px 10px 20px 15px #EAEAEA;
   margin-bottom: 20px;
@@ -131,18 +126,29 @@ nav .fa-arrow-left {
   width: auto;
   margin: 0px;
   padding-left: 20px;
+  align-items: center;
+  display: flex;
+}
+
+.euro {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  position: absolute;
+  right: 40px;
 }
 
 .section3 {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  padding-right: 20px;
 }
 .section3 .step3 {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  width: 315px;
+  width: auto;
   height: 69px;
   box-shadow: 10px 10px 20px 15px #EAEAEA;
   margin-bottom: 20px;
@@ -183,12 +189,13 @@ nav .fa-arrow-left {
   display: flex;
   flex-direction: column;
   padding-left: 20px;
+  padding-right: 20px;
 }
 .section4 .step4 {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  width: 315px;
+  width: auto;
   height: 69px;
   box-shadow: 10px 10px 20px 15px #EAEAEA;
   margin-bottom: 20px;
@@ -245,7 +252,7 @@ nav .fa-arrow-left {
   display: flex;
   font-size: 16px;
   font-weight: 500;
-  color: var(--main-bg-color);
+  color: #FFFFFF;
   justify-content: center;
 }
 
