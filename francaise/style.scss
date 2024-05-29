@@ -1,18 +1,11 @@
-$color_1: var(--main-color);
+$color_1: #000000;
 $color_2: inherit;
 $color_3: #F6F6F6;
 $color_4: #99E2D0;
 $color_5: #EAEAEA;
 $color_6: #353535;
-$background-color_1: var(--main-bg-color);
-$background-color_2: #F6F6F6;
-
-:root {
-	--main-bg-color: #FFFFFF;
-	--filter-bg-color: #DEEBFF;
-	--main-color: #000000;
-      
-}
+$color_7: #DEEBFF;
+$color_8: #FFFFFF;
 
 $font-family_1: 'Roboto', sans-serif;
 
@@ -52,7 +45,7 @@ header {
     padding-bottom: 10px;
     padding-top: 30px;
     height: 44px;
-    background-color: #FFFFFF;
+    background-color: $color_8;
 
     .logo {
 	    display: flex;
@@ -72,7 +65,7 @@ nav {
     left: 30px;
 
     .fa-arrow-left {
-        color: #000000;
+        color: $color_1;
         width: 30px;
         height: 50px;
         align-content: baseline;
@@ -113,22 +106,31 @@ nav {
         font-weight: 300;
         font-size: 16px;
         line-height: 18px;
-        border-bottom: 3px solid #99E2D0;
+        border-bottom: 3px solid $color_4;
         padding-bottom: 8px;
         width: 40px;
     }
 }
 
+.euro {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+    position: absolute;
+    right: 40px;
+  }
+
 .section2 {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    padding-right: 20px;
 
 .step {
         display: flex;
         align-items: center;
         border-radius: 15px;
-        width: 315px;
+        width: auto;
         height: 69px;
         box-shadow: 10px 10px 20px 15px $color_5;    
         margin-bottom: 20px;
@@ -159,12 +161,13 @@ nav {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    padding-right: 20px;
 
 .step3 {
         display: flex;
         align-items: center;
         border-radius: 15px;
-        width: 315px;
+        width: auto;
         height: 69px;
         box-shadow: 10px 10px 20px 15px $color_5;    
         margin-bottom: 20px;
@@ -199,7 +202,7 @@ nav {
         font-weight: 300;
         font-size: 16px;
         line-height: 18px;
-        border-bottom: 3px solid #99E2D0;
+        border-bottom: 3px solid $color_4;
         padding-bottom: 8px;
         width: 40px;
     }
@@ -209,12 +212,13 @@ nav {
     display: flex;
     flex-direction: column;
     padding-left: 20px;
+    padding-right: 20px;
 
 .step4 {
         display: flex;
         align-items: center;
         border-radius: 15px;
-        width: 315px;
+        width: auto;
         height: 69px;
         box-shadow: 10px 10px 20px 15px $color_5;    
         margin-bottom: 20px;
@@ -249,7 +253,7 @@ nav {
         font-weight: 300;
         font-size: 16px;
         line-height: 18px;
-        border-bottom: 3px solid #99E2D0;
+        border-bottom: 3px solid $color_4;
         padding-bottom: 8px;
         width: 40px;
     }
@@ -276,7 +280,7 @@ nav {
             display: flex;
             font-size: 16px;
             font-weight: 500;
-            color: var(--main-bg-color);
+            color: $color_8;
             justify-content: center;
         }
     
@@ -288,7 +292,7 @@ a {
 }
 
 footer {
-    background-color: #353535;
+    background-color: $color_6;
     margin-top: 50px;
     height: 200px;
 
@@ -306,7 +310,7 @@ footer {
     
     .liste1 {
         display: flex;
-       color: #EAEAEA;
+       color: $color_5;
        padding-left: 30px;
        font-size: 16px;
       font-weight: 400;
@@ -319,12 +323,12 @@ footer {
     }
     
     .fa-utensils {
-       color: #DEEBFF;
+       color: $color_7;
        padding-right: 5px;
     }
     
     .fa-handshake-angle {
-        color: #DEEBFF;
+        color: $color_7;
         padding-right: 5px;
      }
 }
