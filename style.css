@@ -27,7 +27,7 @@ body {
 
 .main-container {
   width: 100%;
-  height: 2160px;
+  height: 1400px;
   background-color: #F6F6F6;
 }
 
@@ -263,7 +263,7 @@ header .logo img {
 }
 
 .title3 {
-  width: 150px;
+  width: 235px;
   height: 31px;
   padding-left: 20px;
   padding-top: 20px;
@@ -283,6 +283,28 @@ header .logo img {
 }
 
 .nv {
+  margin-top: 6px;
+  margin-left: 10px;
+  color: #008766;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.carres {
+  width: 80px;
+  height: 29px;
+  background-color: #99E2D0;
+  display: flex;
+  position: absolute;
+  right: 30px;
+  z-index: 10;
+  margin-top: 20px;
+  border-radius: 3px;
+  box-shadow: 4px 2px transparent;
+}
+
+.nvs {
   margin-top: 6px;
   margin-left: 10px;
   color: #008766;
@@ -326,4 +348,69 @@ footer .fa-utensils {
 footer .fa-handshake-angle {
   color: #F6F6F6;
   padding-right: 5px;
+}
+
+@media (min-width: 1024px) {
+  .section2 {
+    height: 240px;
+  }
+  .section2 .BTNS {
+    justify-content: center;
+    display: flex;
+  }
+  .section2 .step {
+    width: 28vw;
+    margin-right: 20px;
+  }
+  .section2 .title2 {
+    justify-content: center;
+    display: flex;
+  }
+  .section3 .restaurants {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    gap: 80px;
+    justify-content: center;
+  }
+  .section3 .restau-cards {
+    width: 490px;
+  }
+  .section3 .card1 {
+    width: 490px;
+  }
+  .title3 {
+    justify-content: center;
+    display: flex;
+  }
+  .carre {
+    margin-left: 390px;
+    right: auto;
+  }
+  .carres {
+    margin-left: 390px;
+    right: auto;
+  }
+  footer {
+    width: 100%;
+    height: 149px;
+    margin: 170px 0px auto auto;
+  }
+  footer .liste1 {
+    padding-right: 140px;
+    flex-direction: row;
+    justify-content: end;
+    bottom: 50px;
+    position: relative;
+  }
+  footer .marg {
+    padding-top: 90px;
+    margin-right: 20px;
+  }
+  footer .logoF {
+    width: -moz-max-content;
+    width: max-content;
+    position: relative;
+    left: 700px;
+    top: 75px;
+  }
 }/*# sourceMappingURL=style.css.map */

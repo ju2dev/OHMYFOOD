@@ -41,7 +41,7 @@ body {
 
 .main-container {
 	width: 100%;
-    height: 2160px;
+    height: 1400px;
     background-color: $color_3;
 }
 
@@ -299,7 +299,7 @@ header {
     }
 
 .title3 {
-    width: 150px;
+    width: 235px;
     height: 31px;
     padding-left: 20px;
     padding-top: 20px;
@@ -327,6 +327,27 @@ header {
     line-height: 16px;
 }
 
+.carres {
+    width: 80px;
+    height: 29px;
+    background-color: $color_4;
+    display: flex;
+    position: absolute;
+    right: 30px;
+    z-index: 10;
+    margin-top: 20px;
+    border-radius: 3px;
+    box-shadow: 4px 2px transparent;
+}
+
+.nvs {
+    margin-top: 6px;
+    margin-left: 10px;
+    color: $color_8;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
 
 footer {
     background-color: $color_6;
@@ -368,4 +389,89 @@ footer {
         color: $color_3;
         padding-right: 5px;
     }
+}
+
+@media (min-width: 1024px) {
+
+.section2 {
+    height: 240px;
+
+    .BTNS {
+        justify-content: center;
+        display: flex;
+    }
+
+    .step {
+        width: 28vw;
+        margin-right: 20px;
+    }
+
+    .title2 {
+        justify-content: center;
+        display: flex;
+}
+
+}
+
+.section3 {
+    .restaurants {
+        display: grid;
+        grid-template-columns: repeat(2, 500px);
+        gap: 80px;
+        justify-content: center;
+    }
+
+    .restau-cards {
+        width: 490px;
+    }
+
+    .card1 {
+        width: 490px;
+    }
+
+}
+
+.title3 {
+    justify-content: center;
+    display: flex;
+}
+
+.carre {
+    margin-left: 390px;
+    right: auto;
+}
+
+.carres {
+    margin-left: 390px;
+    right: auto;
+}
+
+footer {
+    width: 100%;
+    height: 149px;
+    margin: 170px 0px auto auto;
+
+    .liste1 {
+        padding-right: 140px;
+        flex-direction: row;
+        justify-content: end;
+        bottom: 50px;
+        position: relative;
+    }
+
+    .marg {
+        padding-top: 90px;
+        margin-right: 20px;
+}
+
+    .logoF {
+        width: max-content;
+        position: relative;
+        left: 700px;
+        top: 75px;
+    }
+
+}
+
+
 }
