@@ -22,11 +22,6 @@ h1 , h2 , h3 {
         line-height: 40px;
 } 
 
-.main {
-    display: flex;
-    flex-grow: 1;
-} 
-
 body {
 	margin: 0;
 }
@@ -37,7 +32,8 @@ body {
     margin-top: -80px;
     z-index: 1;
     position: relative;
-    border-radius: 50px;
+    border-radius: 50px 50px 0px 0px;
+    height: 1200px;
 }
 
 header {
@@ -294,8 +290,9 @@ a {
 
 footer {
     background-color: $color_6;
-    margin-top: 50px;
     height: 200px;
+    width: 100%;
+    z-index: 1;
 
     .logoF {
         display: flex;
@@ -333,3 +330,51 @@ footer {
         padding-right: 5px;
      }
 }
+
+@media (min-width: 1024px) {
+
+    .main-container { 
+        width: 50%;
+        padding-left: 100px;
+        padding-right: 100px;
+        margin: -80px auto 0 auto;
+    }
+    
+    .card-love1 {
+        justify-content: center;
+    }
+    
+    .euro {
+      right: 140px;
+    }
+    
+    footer {
+        width: 100%;
+        height: 149px;
+    
+    
+        .liste1 {
+            padding-right: 140px;
+            flex-direction: row;
+            justify-content: end;
+            bottom: 50px;
+            position: relative;
+        }
+    
+        .marg {
+            padding-top: 90px;
+            margin-right: 20px;
+    }
+    
+        .logoF {
+            width: max-content;
+            position: relative;
+            left: 700px;
+            top: 75px;
+        }
+    
+    }
+    
+    
+    
+    }
