@@ -303,6 +303,8 @@ header {
     height: 31px;
     padding-left: 20px;
     padding-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .carre {
@@ -393,27 +395,33 @@ footer {
 
 @media (min-width: 1024px) {
 
-.section2 {
-    height: 240px;
-
-    .BTNS {
-        justify-content: center;
+    .section2 {
         display: flex;
-    }
-
-    .step {
-        width: 28vw;
-        margin-right: 20px;
-    }
+        align-items: center;
+        height: 240px;
+    
+        .BTNS {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .step {
+            width: 322px;
+            margin-right: 20px;
+            height: 72px;
+        }
 
     .title2 {
-        justify-content: center;
-        display: flex;
+        padding-right: 800px;
 }
 
 }
 
 .section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .restaurants {
         display: grid;
         grid-template-columns: repeat(2, 500px);
@@ -429,11 +437,11 @@ footer {
         width: 490px;
     }
 
-}
-
-.title3 {
-    justify-content: center;
-    display: flex;
+    .title3 {
+        padding-right: 860px;
+        position: relative;
+        top: -20px;
+    }
 }
 
 .carre {
@@ -449,7 +457,7 @@ footer {
 footer {
     width: 100%;
     height: 149px;
-    margin: 170px 0px auto auto;
+    margin: 260px 0px auto auto;
 
     .liste1 {
         padding-right: 140px;

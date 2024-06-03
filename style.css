@@ -267,6 +267,8 @@ header .logo img {
   height: 31px;
   padding-left: 20px;
   padding-top: 20px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .carre {
@@ -352,19 +354,26 @@ footer .fa-handshake-angle {
 
 @media (min-width: 1024px) {
   .section2 {
+    display: flex;
+    align-items: center;
     height: 240px;
   }
   .section2 .BTNS {
-    justify-content: center;
     display: flex;
+    justify-content: center;
   }
   .section2 .step {
-    width: 28vw;
+    width: 322px;
     margin-right: 20px;
+    height: 72px;
   }
   .section2 .title2 {
-    justify-content: center;
+    padding-right: 800px;
+  }
+  .section3 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .section3 .restaurants {
     display: grid;
@@ -378,9 +387,10 @@ footer .fa-handshake-angle {
   .section3 .card1 {
     width: 490px;
   }
-  .title3 {
-    justify-content: center;
-    display: flex;
+  .section3 .title3 {
+    padding-right: 860px;
+    position: relative;
+    top: -20px;
   }
   .carre {
     margin-left: 390px;
@@ -393,7 +403,7 @@ footer .fa-handshake-angle {
   footer {
     width: 100%;
     height: 149px;
-    margin: 170px 0px auto auto;
+    margin: 260px 0px auto auto;
   }
   footer .liste1 {
     padding-right: 140px;
