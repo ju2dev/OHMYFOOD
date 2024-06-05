@@ -305,6 +305,10 @@ nav {
         box-shadow: 1px 4px 10px gray;
         text-decoration: none;
         }
+
+        .buttoncomm:hover {
+            background: linear-gradient(0deg, rgba(147,86,220,0.65) 46%, rgba(255,121,218,0.8) 100%);
+            }
     
         .Text-com {
             display: flex;
@@ -313,8 +317,11 @@ nav {
             color: $color_8;
             justify-content: center;
         }
-    
 }
+
+    
+    
+
 
 a { 
    text-decoration: none;
