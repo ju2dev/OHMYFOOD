@@ -109,13 +109,14 @@ header .logo img {
   padding-top: 20px;
 }
 .button .buttonexplore {
-  border: 0px solid transparent;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(0deg, rgba(147, 86, 220, 0.8505777311) 46%, rgb(255, 121, 218) 100%);
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.85) 46%, rgb(255, 121, 218) 100%);
   width: 218px;
   height: 50px;
   border-radius: 25px;
   box-shadow: 1px 4px 10px gray;
+}
+.button .buttonexplore:hover {
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.65) 46%, rgba(255, 121, 218, 0.8) 100%);
 }
 .button .Text-ex {
   display: flex;

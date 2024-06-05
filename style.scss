@@ -125,14 +125,15 @@ header {
     border-radius: 25px;
     padding-top: 20px;
 
-    .buttonexplore {    
-        border: 0px solid transparent;
-        background: rgb(147,86,220);
-        background: linear-gradient(0deg, rgba(147,86,220,0.850577731092437) 46%, rgba(255,121,218,1) 100%);
+    .buttonexplore {
+        background: linear-gradient(0deg, rgba(147,86,220,0.85) 46%, rgba(255,121,218,1) 100%);
         width: 218px;
         height: 50px;
         border-radius: 25px;
         box-shadow: 1px 4px 10px gray;
+    }
+    .buttonexplore:hover {
+        background: linear-gradient(0deg, rgba(147,86,220,0.65) 46%, rgba(255,121,218,0.8) 100%);
         }
     
         .Text-ex {
@@ -142,8 +143,10 @@ header {
             color: $color_9;
             justify-content: center;
         }
-    
 }
+    
+    
+
 
 
 .section2 {
