@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .shrikhand-regular {
   font-family: "Shrikhand", serif;
   font-weight: 400;
@@ -66,7 +67,6 @@ header .logo img {
   font-size: 16px;
   color: #353535;
   background: #EAEAEA;
-  box-shadow: 1px 0px 4px grey;
   font-weight: 500;
   text-align: center;
 }
@@ -248,6 +248,9 @@ header .logo img {
   font-weight: 300;
   line-height: 20px;
   margin-top: 5px;
+  top: -15px;
+  position: relative;
+  width: 150px;
 }
 
 .restau-cards .card-love1 {
@@ -260,6 +263,41 @@ header .logo img {
   display: flex;
   gap: 30px;
   flex-direction: column;
+}
+
+.fa-heart {
+  font-size: 27px;
+}
+
+.heart-checkbox {
+  display: none; /* checkbox caché */
+}
+
+.heart-label {
+  position: relative;
+  font-size: 27px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.heart-label::before {
+  content: "\f004"; /* unicode du cœur Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 2.4px;
+  left: 0;
+  color: transparent; /* couleur du cœur vide */
+  transition: color 0.3s;
+}
+
+.heart-checkbox:checked + .heart-label::before {
+  color: rgb(189, 100, 219); /* couleur du cœur après qu'on lui clic dessus */
+}
+
+.heart-checkbox:checked + .heart-label::after {
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0); /* controler affichage du pseudo-élément quand la checkbox est coché / modif ce qui est visible */
 }
 
 .title3 {
@@ -317,7 +355,7 @@ header .logo img {
 
 footer {
   background-color: #353535;
-  margin-top: 700px;
+  margin-top: 770px;
   height: 200px;
 }
 footer .logoF {
