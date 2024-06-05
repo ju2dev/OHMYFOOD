@@ -141,6 +141,34 @@ nav {
     }
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.groupe {
+    opacity: 0;
+    animation: fadeInUp 0.7s ease forwards;
+
+}
+.E {
+    animation-delay: 0.3s;
+}
+
+.P {
+    animation-delay: 1s;
+}
+
+.D {
+    animation-delay: 1.7s;
+}
+
 .section2 {
     display: flex;
     flex-direction: column;
@@ -183,8 +211,19 @@ nav {
   font-size: 15px;
   font-weight: 700;
   line-height: 16px;
-  position: absolute;
-  right: 40px;
+}
+
+.prix {
+    display: flex;
+  position: relative;
+  left: 600px;
+  bottom: 20px;
+  }
+
+  .contain , .contain3 , .contain4 {
+    display: flex;
+  flex-direction: column;
+  margin-top: 15px;
 }
 
 .section3 {
