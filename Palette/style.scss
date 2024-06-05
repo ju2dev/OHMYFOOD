@@ -91,9 +91,40 @@ nav {
         .fa-heart {
             padding-top: 35px;
             padding-left: 20px;
+            font-size: 27px;
         }
     }
   }
+
+   .heart-checkbox {
+       display: none; /* checkbox caché */
+   }
+
+   .heart-label {
+       position: relative;
+       font-size: 27px;
+       cursor: pointer;
+       transition: color 0.3s;
+   }
+
+   .heart-label::before {
+       content: '\f004'; /* unicode du cœur Font Awesome */
+       font-family: 'Font Awesome 5 Free';
+       font-weight: 900;
+       position: absolute;
+       top: 22px;
+        left: 20px;
+       color: transparent; /* couleur du cœur vide */
+       transition: color 0.3s;
+   }
+
+   .heart-checkbox:checked + .heart-label::before {
+       color:rgba(189,100,219); /* couleur du cœur après qu'on lui clic dessus */
+   }
+
+   .heart-checkbox:checked + .heart-label::after {
+       clip-path: inset(0 0 0 0); /* controler affichage du pseudo-élément quand la checkbox est coché / modif ce qui est visible */
+}
 
 .pe {
     width: 70px;
