@@ -275,6 +275,9 @@ nav .fa-arrow-left {
   box-shadow: 1px 4px 10px gray;
   text-decoration: none;
 }
+.button .buttoncomm:hover {
+  background: linear-gradient(0deg, rgba(147, 86, 220, 0.65) 46%, rgba(255, 121, 218, 0.8) 100%);
+}
 .button .Text-com {
   display: flex;
   font-size: 16px;
