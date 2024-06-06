@@ -176,9 +176,10 @@ nav {
 
   .prix {
     display: flex;
-  position: relative;
-  left: 600px;
-  bottom: 20px;
+    position: relative;
+    left: 600px;
+    bottom: 20px;
+    transition: transform 0.3s ease;
   }
 
   .contain , .contain3 , .contain4 {
@@ -223,6 +224,46 @@ nav {
     }
 }
 
+
+.checkbox {
+    display: none;
+}
+
+.menu-label {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.marque-verif {
+    position: absolute;
+    right: 0px;
+    width: 59px;
+    height: 69px;
+    background-color: #6fd1b9;
+    border-radius: 0px 15px 15px 0px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    bottom: 2.5px;
+}
+
+.checkbox:checked + .menu-label .marque-verif {
+    transform: translateX(0%);
+    visibility: visible;
+}
+
+.checkbox:checked + .menu-label .prix {
+    transform: translateX(-35px);
+}
+
+
+.fa-circle-check{
+    color: $color_8;
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
 
 .section3 {
     display: flex;
@@ -351,7 +392,7 @@ nav {
             display: flex;
             font-size: 16px;
             font-weight: 500;
-            color: var(--main-bg-color);
+            color: $color_8;
             justify-content: center;
         }
     
