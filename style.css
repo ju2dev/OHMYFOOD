@@ -220,7 +220,7 @@ header .logo img {
   font-weight: 700;
   line-height: 21px;
   padding-top: 15px;
-  padding-left: 13px;
+  padding-left: 15px;
 }
 .section3 h3 {
   font-size: 18px;
@@ -249,7 +249,7 @@ header .logo img {
   font-weight: 300;
   line-height: 20px;
   margin-top: 5px;
-  top: -15px;
+  top: -20px;
   position: relative;
   width: 150px;
 }
