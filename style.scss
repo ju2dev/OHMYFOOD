@@ -36,7 +36,7 @@ body {
 }
 
 .loader {
-    background: #353535;
+    background: $color_5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,8 +49,8 @@ body {
 }
 
 .loaderanim {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #9356DC;
+    border: 16px solid $color_8;
+    border-top: 16px solid $color_7;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -59,7 +59,7 @@ body {
 
 .tilo {
    position: absolute;
-    color: #f3f3f3;
+    color: $color_6;
 }
 
 @keyframes spin {
