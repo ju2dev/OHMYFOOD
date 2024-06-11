@@ -223,10 +223,11 @@ nav {
         font-weight: 300;
         line-height: 17px;
         padding-left: 20px;
+        width: 60vw;
     }
 }
 
-// permet au texte de disparaitre pour ne pas se surperposer
+/* permet au texte de disparaitre pour ne pas se surperposer */
 .checkbox:checked + .menu-label .es,
 .checkbox:checked + .menu-label .p {
     width: calc(80% - 75px);
@@ -304,10 +305,11 @@ nav {
         font-weight: 300;
         line-height: 17px;
         padding-left: 20px;
+        width: 60vw;
     }
 }
 
-// permet au texte de disparaitre pour ne pas se surperposer
+/* permet au texte de disparaitre pour ne pas se surperposer */
 .checkbox:checked + .menu-label .ps3,
 .checkbox:checked + .menu-label .p3 {
     width: calc(80% - 75px);
@@ -360,10 +362,11 @@ nav {
         font-weight: 300;
         line-height: 17px;
         padding-left: 20px;
+        width: 60vw;
     }
 }
 
-// permet au texte de disparaitre pour ne pas se surperposer
+/* permet au texte de disparaitre pour ne pas se surperposer */
 .checkbox:checked + .menu-label .ds4,
 .checkbox:checked + .menu-label .d4 {
     width: calc(80% - 75px);
@@ -469,6 +472,7 @@ footer {
      }
 }
 
+/* Version PC */
 @media (min-width: 1024px) {
 
     .main-container { 
@@ -505,13 +509,21 @@ footer {
             margin-right: 20px;
     }
     
-        .logoF {
-            width: max-content;
-            position: relative;
-            left: 700px;
-            top: 75px;
-        }
+    .logoF {
+        width: max-content;
+        position: relative;
+        left: 700px;
+        top: 75px;
+    }
     
-    }
+}
        
+}
+
+/* titre au millieu */
+@media (min-width: 440px) , (max-width: 1023px) {
+    
+    .card-love1 {
+        justify-content: center;
     }
+}

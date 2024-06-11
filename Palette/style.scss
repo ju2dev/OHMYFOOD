@@ -203,6 +203,7 @@ nav {
         font-weight: 300;
         line-height: 17px;
         padding-left: 20px;
+        width: 60vw;
     }
 }
 
@@ -260,7 +261,7 @@ nav {
     transform: translateX(-35px);
 }
 
-// permet au texte de disparaitre pour ne pas se surperposer
+/* permet au texte de disparaitre pour ne pas se surperposer */
 .checkbox:checked + .menu-label .es,
 .checkbox:checked + .menu-label .p {
   width: calc(80% - 75px);
@@ -305,9 +306,12 @@ nav {
         font-weight: 300;
         line-height: 17px;
         padding-left: 20px;
+        width: 60vw;
     }
 }
-// permet au texte de disparaitre pour ne pas se surperposer
+
+
+/* permet au texte de disparaitre pour ne pas se surperposer */
 .checkbox:checked + .menu-label .ps3,
 .checkbox:checked + .menu-label .p3 {
     width: calc(80% - 75px);
@@ -360,10 +364,11 @@ nav {
         font-weight: 300;
         line-height: 17px;
         padding-left: 20px;
+        width: 60vw;
     }
 }
 
-// permet au texte de disparaitre pour ne pas se surperposer
+/* permet au texte de disparaitre pour ne pas se surperposer */
 .checkbox:checked + .menu-label .ds4,
 .checkbox:checked + .menu-label .d4 {
     width: calc(80% - 75px);
@@ -467,6 +472,7 @@ footer {
      }
 }
 
+/* version PC */
 @media (min-width: 1024px) {
 
 .main-container { 
@@ -506,5 +512,12 @@ footer {
 
 }
 
+}
 
+/* titre au millieu */
+@media (min-width: 440px) , (max-width: 1023px) {
+
+    .card-love1 {
+        justify-content: center;
+    }
 }

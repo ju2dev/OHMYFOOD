@@ -182,6 +182,7 @@ nav .fa-arrow-left {
   font-weight: 300;
   line-height: 17px;
   padding-left: 20px;
+  width: 60vw;
 }
 
 .euro {
@@ -238,6 +239,7 @@ nav .fa-arrow-left {
   transform: translateX(-35px);
 }
 
+/* permet au texte de disparaitre pour ne pas se surperposer */
 .checkbox:checked + .menu-label .es,
 .checkbox:checked + .menu-label .p {
   width: calc(80% - 75px);
@@ -280,8 +282,10 @@ nav .fa-arrow-left {
   font-weight: 300;
   line-height: 17px;
   padding-left: 20px;
+  width: 60vw;
 }
 
+/* permet au texte de disparaitre pour ne pas se surperposer */
 .checkbox:checked + .menu-label .ps3,
 .checkbox:checked + .menu-label .p3 {
   width: calc(80% - 75px);
@@ -331,8 +335,10 @@ nav .fa-arrow-left {
   font-weight: 300;
   line-height: 17px;
   padding-left: 20px;
+  width: 60vw;
 }
 
+/* permet au texte de disparaitre pour ne pas se surperposer */
 .checkbox:checked + .menu-label .ds4,
 .checkbox:checked + .menu-label .d4 {
   width: calc(80% - 75px);
@@ -426,6 +432,7 @@ footer .fa-handshake-angle {
   padding-right: 5px;
 }
 
+/* version PC */
 @media (min-width: 1024px) {
   .main-container {
     width: 50%;
@@ -457,5 +464,11 @@ footer .fa-handshake-angle {
     position: relative;
     left: 700px;
     top: 75px;
+  }
+}
+/* titre au millieu */
+@media (min-width: 440px), (max-width: 1023px) {
+  .card-love1 {
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */
