@@ -214,9 +214,7 @@ nav {
         font-size: 18px;
         font-weight: 500;
         line-height: 21px;
-        width: 300px;
         padding-left: 20px;
-        margin: 0;
         padding-bottom: 5px;
     }
     
@@ -224,10 +222,16 @@ nav {
         font-size: 15px;
         font-weight: 300;
         line-height: 17px;
-        width: auto;
-        margin: 0px;
         padding-left: 20px;
     }
+}
+
+// permet au texte de disparaitre pour ne pas se surperposer
+.checkbox:checked + .menu-label .es,
+.checkbox:checked + .menu-label .p {
+  width: calc(80% - 75px); 
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .checkbox {
@@ -290,9 +294,7 @@ nav {
         font-size: 18px;
         font-weight: 500;
         line-height: 21px;
-        width: 300px;
         padding-left: 20px;
-        margin: 0;
         padding-bottom: 5px;
     }
     
@@ -300,10 +302,16 @@ nav {
         font-size: 15px;
         font-weight: 300;
         line-height: 17px;
-        width: auto;
-        margin: 0px;
         padding-left: 20px;
     }
+}
+
+// permet au texte de disparaitre pour ne pas se surperposer
+.checkbox:checked + .menu-label .ps3,
+.checkbox:checked + .menu-label .p3 {
+  width: calc(80% - 75px); 
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .pp {
@@ -341,9 +349,7 @@ nav {
         font-size: 18px;
         font-weight: 500;
         line-height: 21px;
-        width: 300px;
         padding-left: 20px;
-        margin: 0;
         padding-bottom: 5px;
     }
     
@@ -351,11 +357,18 @@ nav {
         font-size: 15px;
         font-weight: 300;
         line-height: 17px;
-        width: auto;
-        margin: 0px;
         padding-left: 20px;
     }
 }
+
+// permet au texte de disparaitre pour ne pas se surperposer
+.checkbox:checked + .menu-label .ds4,
+.checkbox:checked + .menu-label .d4 {
+  width: calc(80% - 75px); 
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 
 .dp {
     width: 70px;
