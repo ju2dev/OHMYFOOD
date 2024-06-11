@@ -9,12 +9,11 @@ $color_8: #008766;
 $color_9: #FFFFFF;
 
 
-    .shrikhand-regular {
-        font-family: "Shrikhand", serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-
+.shrikhand-regular {
+    font-family: "Shrikhand", serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 $font-family_1: 'Roboto', sans-serif;
 
@@ -22,6 +21,7 @@ $font-family_1: 'Roboto', sans-serif;
 	font-family: $font-family_1;
 }
 
+/* Masquer la flèche gauche */
 .fa-arrow-left {
     display: none;
 }
@@ -35,6 +35,7 @@ body {
 	margin: 0;
 }
 
+/* Loader */
 .loader {
     background: $color_5;
     display: flex;
@@ -48,9 +49,10 @@ body {
     animation: fadeInUp 1s forwards 1s;
 }
 
+/* Couleur + rotation */
 .loaderanim {
-    border: 16px solid $color_8;
-    border-top: 16px solid $color_7;
+    border: 16px solid $color_9;
+    border-top: 16px solid $color_6;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -62,11 +64,13 @@ body {
     color: $color_6;
 }
 
+/* Animation spin (rotation) */
 @keyframes spin {
     0% { transform: rotate(0deg);}
     100% { transform: rotate(360deg);}
 }
 
+/* Animation faceInUp vers le haut - loader disparait vers le haut */
 @keyframes fadeInUp {
     80% {transform: translateY(-100%);}
     100% {opacity: 0;}
@@ -91,7 +95,6 @@ nav {
 	display: flex;
 }
 
-
 header {
     display: flex;
     justify-content: center;
@@ -111,7 +114,7 @@ header {
     } 
 }
 
-
+/* barre de recherche */
 #site-search {
     display: flex;
     height: 49px;
@@ -129,6 +132,7 @@ header {
     justify-content: center;
   }
   
+/* Centrer le texte dans l'input */
   .search-bar input {
     text-align: center;
   }
@@ -141,20 +145,20 @@ header {
     right: 80px; 
 }
 
-    .title {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 29px;
-        text-align: center;
-        padding-top: 20px;
-    }
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 20px;
+}
 
-    .p1 {
-        font-size: 18px;
-        font-weight: 300;
-        text-align: center;
 
-    }
+.p1 {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
 
 .button {
     justify-content: center;
@@ -171,6 +175,7 @@ header {
         box-shadow: 0px 5px 5px lightgray;
     }
 
+    /* Styles pour le bouton d'exploration au survol */
     .buttonexplore:hover {
         background: linear-gradient(360deg, rgba(151,71,255,1) -40%, rgba(228,112,218,1) 65%);
         opacity: 0.8;
@@ -352,6 +357,7 @@ header {
         transition: color 0.3s;
     }
 
+    /* Styles pour l'icône de la case à cocher "j'aime" */
     .heart-label::before {
         content: '\f004'; /* unicode du cœur Font Awesome */
         font-family: 'Font Awesome 5 Free';
@@ -362,6 +368,7 @@ header {
         transition: color 0.3s;
     }
 
+    /* Styles pour la case à cocher "j'aime" cochée */
     .heart-checkbox:checked + .heart-label::before {
         background: linear-gradient(180deg, rgba(151,71,255,1) 0%, rgba(228,112,218,1) 100%);
         /* applique le dégrader de couleur juste coeur quand checkbox est cochée */
