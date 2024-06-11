@@ -214,6 +214,7 @@ nav .fa-arrow-left {
   width: calc(80% - 75px);
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .checkbox {
@@ -293,6 +294,7 @@ nav .fa-arrow-left {
   width: calc(80% - 75px);
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .pp {
@@ -347,6 +349,7 @@ nav .fa-arrow-left {
   width: calc(80% - 75px);
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .dp {
