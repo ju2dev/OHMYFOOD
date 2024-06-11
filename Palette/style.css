@@ -174,33 +174,28 @@ nav .fa-arrow-left {
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
-  width: 300px;
   padding-left: 20px;
-  margin: 0;
   padding-bottom: 5px;
 }
 .section2 .p {
   font-size: 15px;
   font-weight: 300;
   line-height: 17px;
-  width: auto;
-  margin: 0px;
   padding-left: 20px;
-  align-items: center;
-  display: flex;
 }
 
 .euro {
   font-size: 15px;
   font-weight: 700;
   line-height: 16px;
+  position: relative;
+  left: 95%;
 }
 
 .prix {
   display: flex;
   position: relative;
   bottom: 16px;
-  justify-content: end;
   right: 40px;
   transition: transform 0.3s ease;
 }
@@ -243,6 +238,13 @@ nav .fa-arrow-left {
   transform: translateX(-35px);
 }
 
+.checkbox:checked + .menu-label .es,
+.checkbox:checked + .menu-label .p {
+  width: calc(80% - 75px);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .fa-circle-check {
   color: #FFFFFF;
   position: relative;
@@ -269,18 +271,21 @@ nav .fa-arrow-left {
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
-  width: 300px;
   padding-left: 20px;
-  margin: 0;
   padding-bottom: 5px;
 }
 .section3 .p3 {
   font-size: 15px;
   font-weight: 300;
   line-height: 17px;
-  width: auto;
-  margin: 0px;
   padding-left: 20px;
+}
+
+.checkbox:checked + .menu-label .ps3,
+.checkbox:checked + .menu-label .p3 {
+  width: calc(80% - 75px);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .pp {
@@ -316,18 +321,21 @@ nav .fa-arrow-left {
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
-  width: 300px;
   padding-left: 20px;
-  margin: 0;
   padding-bottom: 5px;
 }
 .section4 .d4 {
   font-size: 15px;
   font-weight: 300;
   line-height: 17px;
-  width: auto;
-  margin: 0px;
   padding-left: 20px;
+}
+
+.checkbox:checked + .menu-label .ds4,
+.checkbox:checked + .menu-label .d4 {
+  width: calc(80% - 75px);
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .dp {
@@ -424,9 +432,6 @@ footer .fa-handshake-angle {
   }
   .card-love1 {
     justify-content: center;
-  }
-  .euro {
-    right: 140px;
   }
   footer {
     width: 100%;
