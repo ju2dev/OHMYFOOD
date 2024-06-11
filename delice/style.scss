@@ -229,9 +229,10 @@ nav {
 // permet au texte de disparaitre pour ne pas se surperposer
 .checkbox:checked + .menu-label .es,
 .checkbox:checked + .menu-label .p {
-  width: calc(80% - 75px); 
-  overflow: hidden;
-  white-space: nowrap;
+    width: calc(80% - 75px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
@@ -314,9 +315,10 @@ nav {
 // permet au texte de disparaitre pour ne pas se surperposer
 .checkbox:checked + .menu-label .ps3,
 .checkbox:checked + .menu-label .p3 {
-  width: calc(80% - 75px); 
-  overflow: hidden;
-  white-space: nowrap;
+    width: calc(80% - 75px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
@@ -374,9 +376,10 @@ nav {
 // permet au texte de disparaitre pour ne pas se surperposer
 .checkbox:checked + .menu-label .ds4,
 .checkbox:checked + .menu-label .d4 {
-  width: calc(80% - 75px); 
-  overflow: hidden;
-  white-space: nowrap;
+    width: calc(80% - 75px);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 
