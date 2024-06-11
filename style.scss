@@ -400,6 +400,9 @@ header {
     margin-top: 20px;
     border-radius: 3px;
     box-shadow: 4px 2px transparent;
+    opacity: 0;
+    transition: opacity 1s linear;
+    animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
 }
 
 .nv {
@@ -409,6 +412,16 @@ header {
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
+    opacity: 0;
+    transition: opacity 1s linear;
+    animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
+}
+
+/* L'animation pour faire apparaître nouveau après loader */
+@keyframes showElements {
+    to {
+        opacity: 1;
+    }
 }
 
 .carres {
@@ -422,6 +435,9 @@ header {
     margin-top: 20px;
     border-radius: 3px;
     box-shadow: 4px 2px transparent;
+    opacity: 0;
+    transition: opacity 1s linear;
+    animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
 }
 
 .nvs {
@@ -431,6 +447,9 @@ header {
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
+    opacity: 0;
+    transition: opacity 1s linear;
+    animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
 }
 
 footer {
