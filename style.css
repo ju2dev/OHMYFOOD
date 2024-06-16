@@ -9,7 +9,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-/* Masquer la flèche gauche */
+/* masquer la flèche retour */
 .fa-arrow-left {
   display: none;
 }
@@ -23,7 +23,7 @@ body {
   margin: 0;
 }
 
-/* Loader */
+/* loader occupe l'écran */
 .loader {
   background: #EAEAEA;
   display: flex;
@@ -37,7 +37,7 @@ body {
   animation: fadeInUp 1s forwards 1s;
 }
 
-/* Couleur + rotation */
+/* cercle du loader couleur + rotation */
 .loaderanim {
   border: 16px solid #FFFFFF;
   border-top: 16px solid #353535;
@@ -151,12 +151,14 @@ header .logo img {
   text-align: center;
 }
 
+/* bouton explore */
 .button {
   justify-content: center;
   display: flex;
   border-radius: 25px;
   padding-top: 20px;
-  /* Styles pour le bouton d'exploration au survol */
+  /* transition : souris sur le bouton : ombre + couleur transitionne maniere fluide */
+  /* Style pour le bouton d'exploration au survol */
 }
 .button .buttonexplore {
   background: linear-gradient(360deg, rgb(151, 71, 255) -40%, rgb(228, 112, 218) 65%);
@@ -179,6 +181,7 @@ header .logo img {
   justify-content: center;
 }
 
+/* Partie Fonctionnement */
 .section2 {
   display: flex;
   margin-top: 80px;
@@ -186,6 +189,7 @@ header .logo img {
   height: 440px;
   padding-left: 20px;
   flex-direction: column;
+  /* aligne le texte + couleur carte */
 }
 .section2 .title2 {
   width: 275px;
@@ -227,6 +231,7 @@ header .logo img {
   margin-left: 15px;
 }
 
+/* boutons de la partie fonctionnement */
 .btn1 {
   display: flex;
   width: 0px;
@@ -254,12 +259,14 @@ header .logo img {
   color: #9356DC;
 }
 
+/* partie Restaurant */
 .section3 {
   display: flex;
   margin-top: 30px;
   height: 440px;
   padding-left: 20px;
   flex-direction: column;
+  /* carte */
 }
 .section3 .card1 {
   background-color: #FFFFFF;
@@ -281,6 +288,7 @@ header .logo img {
   margin: 0;
 }
 
+/* image carte */
 .restau-cards img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -290,11 +298,7 @@ header .logo img {
   border-top-right-radius: 20px;
 }
 
-.restau-cards .card-title1 {
-  margin-top: 10px;
-  margin-bottom: 4px;
-}
-
+/* texte */
 .restau-cards .card-subtitle1 {
   display: flex;
   font-size: 17px;
@@ -306,6 +310,7 @@ header .logo img {
   width: 150px;
 }
 
+/* coeur */
 .restau-cards .card-love1 {
   display: flex;
   justify-content: end;
@@ -325,8 +330,7 @@ header .logo img {
 .heart-label {
   position: relative;
   font-size: 24px;
-  cursor: pointer;
-  transition: color 0.3s;
+  cursor: pointer; /* modif forme souris quand on passe dessus */
 }
 
 /* Styles pour l'icône de la case à cocher "j'aime" */
@@ -337,21 +341,15 @@ header .logo img {
   position: absolute;
   top: 2px;
   color: transparent; /* couleur du cœur vide */
-  transition: color 0.3s;
 }
 
-/* Styles pour la case à cocher "j'aime" cochée */
+/* Style pour la case à cocher "j'aime" cochée */
 .heart-checkbox:checked + .heart-label::before {
   background: linear-gradient(180deg, rgb(151, 71, 255) 0%, rgb(228, 112, 218) 100%);
   /* applique le dégrader de couleur juste coeur quand checkbox est cochée */
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.heart-checkbox:checked + .heart-label::after {
-  -webkit-clip-path: inset(0 0 0 0);
-          clip-path: inset(0 0 0 0); /* controler affichage du pseudo-élément quand la checkbox est coché / modif ce qui est visible */
 }
 
 .title3 {
@@ -362,6 +360,7 @@ header .logo img {
   font-weight: 700;
 }
 
+/* carré vert + texte nouveau */
 .carre {
   width: 80px;
   height: 29px;
@@ -387,15 +386,16 @@ header .logo img {
   line-height: 16px;
   opacity: 0;
   transition: opacity 1s linear;
-  animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
+  animation: showElements 1s forwards 1s; /* L'animation commence après 1s ; rend progressivement visible */
 }
 
-/* L'animation pour faire apparaître nouveau après loader */
+/* L'animation pour faire apparaître "nouveau" après loader */
 @keyframes showElements {
   to {
     opacity: 1;
   }
 }
+/* carré vert + texte nouveau */
 .carres {
   width: 80px;
   height: 29px;
@@ -409,7 +409,7 @@ header .logo img {
   box-shadow: 4px 2px transparent;
   opacity: 0;
   transition: opacity 1s linear;
-  animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
+  animation: showElements 1s forwards 1s; /* L'animation commence après 1s ; rend progressivement visible */
 }
 
 .nvs {
@@ -421,13 +421,14 @@ header .logo img {
   line-height: 16px;
   opacity: 0;
   transition: opacity 1s linear;
-  animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
+  animation: showElements 1s forwards 1s; /* L'animation commence après 1s ; rend progressivement visible */
 }
 
 footer {
   background-color: #353535;
   margin-top: 770px;
   height: 200px;
+  /* Colonne */
 }
 footer .logoF {
   display: flex;
@@ -460,7 +461,9 @@ footer .fa-handshake-angle {
   padding-right: 5px;
 }
 
+/* version PC */
 @media (min-width: 1024px) {
+  /* partie fonctionnement horizontalement */
   .section2 {
     display: flex;
     align-items: center;
@@ -478,6 +481,7 @@ footer .fa-handshake-angle {
   .section2 .title2 {
     padding-right: 800px;
   }
+  /* partie restaurant grid & colonne */
   .section3 {
     display: flex;
     flex-direction: column;
@@ -500,6 +504,7 @@ footer .fa-handshake-angle {
     position: relative;
     top: -20px;
   }
+  /* placement carré vert */
   .carre {
     margin-left: 390px;
     right: auto;
@@ -508,6 +513,7 @@ footer .fa-handshake-angle {
     margin-left: 390px;
     right: auto;
   }
+  /* footer en ligne */
   footer {
     width: 100%;
     height: 125px;

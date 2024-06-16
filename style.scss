@@ -21,7 +21,7 @@ $font-family_1: 'Roboto', sans-serif;
 	font-family: $font-family_1;
 }
 
-/* Masquer la flèche gauche */
+/* masquer la flèche retour */
 .fa-arrow-left {
     display: none;
 }
@@ -35,7 +35,7 @@ body {
 	margin: 0;
 }
 
-/* Loader */
+/* loader occupe l'écran */
 .loader {
     background: $color_5;
     display: flex;
@@ -49,7 +49,7 @@ body {
     animation: fadeInUp 1s forwards 1s;
 }
 
-/* Couleur + rotation */
+/* cercle du loader couleur + rotation */
 .loaderanim {
     border: 16px solid $color_9;
     border-top: 16px solid $color_6;
@@ -159,12 +159,14 @@ header {
     text-align: center;
 }
 
+/* bouton explore */
 .button {
     justify-content: center;
     display: flex;
     border-radius: 25px;
     padding-top: 20px;
 
+    /* transition : souris sur le bouton : ombre + couleur transitionne maniere fluide */
     .buttonexplore {
         background: linear-gradient(360deg, rgba(151,71,255,1) -40%, rgba(228,112,218,1) 65%);
         width: 218px;
@@ -174,7 +176,7 @@ header {
         box-shadow: 0px 5px 5px lightgray;
     }
 
-    /* Styles pour le bouton d'exploration au survol */
+    /* Style pour le bouton d'exploration au survol */
     .buttonexplore:hover {
         background: linear-gradient(360deg, rgba(151,71,255,1) -40%, rgba(228,112,218,1) 65%);
         opacity: 0.8;
@@ -190,6 +192,7 @@ header {
         }
 }   
 
+/* Partie Fonctionnement */
 .section2 {
     display: flex;
     margin-top: 80px;
@@ -209,6 +212,7 @@ header {
         padding-right: 20px;
     }
 
+/* aligne le texte + couleur carte */
 .step {
         display: flex;
         align-items: center;
@@ -246,6 +250,7 @@ header {
 }
 }
 
+/* boutons de la partie fonctionnement */
 .btn1 {
     display: flex;
     width: 0px;
@@ -276,6 +281,7 @@ header {
     }
 }
 
+/* partie Restaurant */
 .section3 {
     display: flex;
     margin-top: 30px;
@@ -283,7 +289,7 @@ header {
     padding-left: 20px;
     flex-direction: column;
 
-
+/* carte */
     .card1 {
         background-color: $color_9;
         height: 251px;
@@ -308,6 +314,7 @@ header {
     }
 }
     
+    /* image carte */
     .restau-cards img {
         object-fit: cover;
         width: 100%;
@@ -315,12 +322,8 @@ header {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
-    
-    .restau-cards .card-title1 {
-    margin-top: 10px;
-    margin-bottom: 4px;
-    }
-    
+      
+    /* texte */
     .restau-cards .card-subtitle1 {
         display: flex;
         font-size: 17px;
@@ -332,6 +335,7 @@ header {
         width: 150px;
     }
     
+    /* coeur */
     .restau-cards .card-love1 {
         display: flex;
         justify-content: end;
@@ -351,8 +355,7 @@ header {
     .heart-label {
         position: relative;
         font-size: 24px;
-        cursor: pointer;
-        transition: color 0.3s;
+        cursor: pointer; /* modif forme souris quand on passe dessus */
     }
 
     /* Styles pour l'icône de la case à cocher "j'aime" */
@@ -363,10 +366,9 @@ header {
         position: absolute;
         top: 2px;
         color: transparent; /* couleur du cœur vide */
-        transition: color 0.3s;
     }
 
-    /* Styles pour la case à cocher "j'aime" cochée */
+    /* Style pour la case à cocher "j'aime" cochée */
     .heart-checkbox:checked + .heart-label::before {
         background: linear-gradient(180deg, rgba(151,71,255,1) 0%, rgba(228,112,218,1) 100%);
         /* applique le dégrader de couleur juste coeur quand checkbox est cochée */
@@ -374,10 +376,6 @@ header {
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
-    .heart-checkbox:checked + .heart-label::after {
-        clip-path: inset(0 0 0 0); /* controler affichage du pseudo-élément quand la checkbox est coché / modif ce qui est visible */
- }
 
 .title3 {
     width: 235px;
@@ -387,6 +385,7 @@ header {
     font-weight: 700;
 }
 
+/* carré vert + texte nouveau */
 .carre {
     width: 80px;
     height: 29px;
@@ -403,6 +402,7 @@ header {
     animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
 }
 
+
 .nv {
     margin-top: 6px;
     margin-left: 10px;
@@ -412,16 +412,17 @@ header {
     line-height: 16px;
     opacity: 0;
     transition: opacity 1s linear;
-    animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
+    animation: showElements 1s forwards 1s; /* L'animation commence après 1s ; rend progressivement visible */
 }
 
-/* L'animation pour faire apparaître nouveau après loader */
+/* L'animation pour faire apparaître "nouveau" après loader */
 @keyframes showElements {
     to {
         opacity: 1;
     }
 }
 
+/* carré vert + texte nouveau */
 .carres {
     width: 80px;
     height: 29px;
@@ -435,7 +436,7 @@ header {
     box-shadow: 4px 2px transparent;
     opacity: 0;
     transition: opacity 1s linear;
-    animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
+    animation: showElements 1s forwards 1s; /* L'animation commence après 1s ; rend progressivement visible */
 }
 
 .nvs {
@@ -447,7 +448,7 @@ header {
     line-height: 16px;
     opacity: 0;
     transition: opacity 1s linear;
-    animation: showElements 1s forwards 1s; /* L'animation commence après 1s */
+    animation: showElements 1s forwards 1s; /* L'animation commence après 1s ; rend progressivement visible */
 }
 
 footer {
@@ -466,6 +467,7 @@ footer {
                 }
     }
     
+    /* Colonne */
     .liste1 {
         display: flex;
        color: $color_5;
@@ -491,8 +493,10 @@ footer {
     }
 }
 
+/* version PC */
 @media (min-width: 1024px) {
 
+    /* partie fonctionnement horizontalement */
     .section2 {
         display: flex;
         align-items: center;
@@ -515,6 +519,7 @@ footer {
 
 }
 
+/* partie restaurant grid & colonne */
 .section3 {
     display: flex;
     flex-direction: column;
@@ -542,6 +547,8 @@ footer {
     }
 }
 
+
+/* placement carré vert */
 .carre {
     margin-left: 390px;
     right: auto;
@@ -552,6 +559,7 @@ footer {
     right: auto;
 }
 
+/* footer en ligne */
 footer {
     width: 100%;
     height: 125px;
