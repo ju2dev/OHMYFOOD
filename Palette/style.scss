@@ -186,47 +186,49 @@ nav {
 
 /* style texte + couleur carte */
 .step {
-        display: flex;
-        align-items: center;
-        border-radius: 15px;
-        width: auto;
-        height: 69px;
-        box-shadow: 0px 0px 10px lightgray;    
-        margin-bottom: 20px;
-    }
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    height: 69px;
+    box-shadow: 0px 0px 10px lightgray;    
+    margin-bottom: 20px;
+}
 
-    .es {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 21px;
-        padding-left: 20px;
-        padding-bottom: 5px;
-    }
-    
-    .p {
-        font-size: 15px;
-        font-weight: 300;
-        line-height: 17px;
-        padding-left: 20px;
-        width: 60vw;
-    }
+.es {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 17px;
+    padding-left: 20px;
+    position: relative;
+    bottom: 15px;
+}
 }
 
 .euro {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 16px;
-  position: relative;
-  left: 95%;
+font-size: 15px;
+font-weight: 700;
+line-height: 16px;
+position: absolute; /* Utiliser une position absolue */
+right: 10px; /* Ajuster la position */
+transform: translateY(30%); /* Centrer verticalement */
 }
 
 .prix {
-    display: flex;
-    position: relative;
-    bottom: 16px;
-    right: 40px;
-    transition: transform 0.3s ease;
-  }
+display: flex;
+position: absolute; /* Utiliser une position absolue */
+right: 10px; /* Ajuster la position */
+top: 50%; /* Centrer verticalement */
+transform: translateY(-50%); /* Centrer verticalement */
+transition: transform 0.3s ease;
+}
 
 /* conteneurs */
 .contain , .contain3 , .contain4 {
@@ -251,14 +253,13 @@ nav {
 /* Sélecteur de plat */
 .marque-verif {
     position: absolute;
-    right: -75px;
     width: 59px;
     height: 69px;
     background-color: #6fd1b9;
     border-radius: 0px 15px 15px 0px;
     transform: translateX(100%); /* Déplace l'élément à droite */ 
     transition: transform 0.3s ease; /* Transition + fluide */ 
-    bottom: -13.5px;
+    bottom: -35px;
 }
 
 /* Sélecteur de plat se déplace pour être visible */ 
@@ -267,9 +268,9 @@ nav {
     visibility: visible;
 }
 
-/* Le prix se déplace de 35px vers la gauche */ 
+/* Le prix se déplace vers la gauche */ 
 .checkbox:checked + .menu-label .prix {
-    transform: translateX(-35px);
+    transform: translateX(-48px);
 }
 
 /* permet au texte de disparaitre pour ne pas se surperposer */
@@ -280,6 +281,7 @@ nav {
   white-space: nowrap; /* Empêche le texte d'être sur plusieurs lignes */ 
   text-overflow: ellipsis; /* Affiche "..." pour indiquer que le texte déborde */ 
 }
+
 
 .fa-circle-check {
     color: $color_8;
@@ -300,7 +302,6 @@ nav {
         display: flex;
         align-items: center;
         border-radius: 15px;
-        width: auto;
         height: 69px;
         box-shadow: 0px 0px 10px lightgray;    
         margin-bottom: 20px;
@@ -311,7 +312,7 @@ nav {
         font-weight: 500;
         line-height: 21px;
         padding-left: 20px;
-        padding-bottom: 5px;
+        padding-bottom: 20px;
     }
     
     .p3 {
@@ -319,7 +320,8 @@ nav {
         font-weight: 300;
         line-height: 17px;
         padding-left: 20px;
-        width: 60vw;
+        position: relative;
+        bottom: 15px;
     }
 }
 
@@ -361,7 +363,6 @@ nav {
         display: flex;
         align-items: center;
         border-radius: 15px;
-        width: auto;
         height: 69px;
         box-shadow: 0px 0px 10px lightgray;     
         margin-bottom: 20px;
@@ -372,7 +373,7 @@ nav {
         font-weight: 500;
         line-height: 21px;
         padding-left: 20px;
-        padding-bottom: 5px;
+        padding-bottom: 20px;
     }
     
     .d4 {
@@ -380,7 +381,8 @@ nav {
         font-weight: 300;
         line-height: 17px;
         padding-left: 20px;
-        width: 60vw;
+        position: relative;
+        bottom: 15px;
     }
 }
 

@@ -162,14 +162,17 @@ nav .fa-arrow-left {
   font-size: 15px;
   font-weight: 700;
   line-height: 16px;
+  position: absolute;
+  right: 10px;
+  transform: translateY(30%);
 }
 
 .prix {
   display: flex;
-  position: relative;
-  bottom: 16px;
-  justify-content: end;
-  right: 40px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
   transition: transform 0.3s ease;
 }
 
@@ -192,7 +195,6 @@ nav .fa-arrow-left {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  width: auto;
   height: 69px;
   box-shadow: 0px 0px 10px lightgray;
   margin-bottom: 20px;
@@ -202,14 +204,15 @@ nav .fa-arrow-left {
   font-weight: 500;
   line-height: 21px;
   padding-left: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 .section2 .p {
   font-size: 15px;
   font-weight: 300;
   line-height: 17px;
   padding-left: 20px;
-  width: 50vw;
+  position: relative;
+  bottom: 15px;
 }
 
 /* permet au texte de disparaitre pour ne pas se surperposer */
@@ -236,14 +239,13 @@ nav .fa-arrow-left {
 /* Sélecteur de plat */
 .marque-verif {
   position: absolute;
-  right: -75px;
   width: 59px;
   height: 69px;
   background-color: #6fd1b9;
   border-radius: 0px 15px 15px 0px;
   transform: translateX(100%); /* Déplace l'élément à droite */
   transition: transform 0.3s ease; /* Transition + fluide */
-  bottom: -13.5px;
+  bottom: -35px;
 }
 
 /* Sélecteur de plat se déplace pour être visible */
@@ -254,7 +256,7 @@ nav .fa-arrow-left {
 
 /* Le prix se déplace de 35px vers la gauche */
 .checkbox:checked + .menu-label .prix {
-  transform: translateX(-35px);
+  transform: translateX(-48px);
 }
 
 .fa-circle-check {
@@ -276,7 +278,6 @@ nav .fa-arrow-left {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  width: auto;
   height: 69px;
   box-shadow: 0px 0px 10px lightgray;
   margin-bottom: 20px;
@@ -286,14 +287,15 @@ nav .fa-arrow-left {
   font-weight: 500;
   line-height: 21px;
   padding-left: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 .section3 .p3 {
   font-size: 15px;
   font-weight: 300;
   line-height: 17px;
   padding-left: 20px;
-  width: 50vw;
+  position: relative;
+  bottom: 15px;
 }
 
 /* permet au texte de disparaitre pour ne pas se surperposer */
@@ -332,7 +334,6 @@ nav .fa-arrow-left {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  width: auto;
   height: 69px;
   box-shadow: 0px 0px 10px lightgray;
   margin-bottom: 20px;
@@ -342,14 +343,15 @@ nav .fa-arrow-left {
   font-weight: 500;
   line-height: 21px;
   padding-left: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 .section4 .d4 {
   font-size: 15px;
   font-weight: 300;
   line-height: 17px;
   padding-left: 20px;
-  width: 50vw;
+  position: relative;
+  bottom: 15px;
 }
 
 /* permet au texte de disparaitre pour ne pas se surperposer */
